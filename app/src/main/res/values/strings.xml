@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LeakCanary Demo</string>
+    <string name="main_title">First view</string>
+    <string name="main_description">Open the second view, then go back (Back button). Every visit to the second view leaks a SecondActivity instance.</string>
+    <string name="open_second">Open second view</string>
+    <string name="second_title">Second view</string>
+    <string name="second_description">This Activity registers itself in the LeakyRegistry singleton and never unregisters. After going back it is destroyed, but it can\'t be garbage collected.</string>
+    <string name="go_back">Go back</string>
+    <string name="leaked_count">Listeners held by registry: %1$d</string>
+</resources>
